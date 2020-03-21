@@ -4,12 +4,12 @@
     box-shadow: $shadow
 
 =getBox($shadow , $padding , $borderRadius , $margin , $backgroundColor)
+    +getBoxShadow($shadow)
     padding: $padding
     border-radius: $borderRadius
     margin: $margin
     background-color: $backgroundColor
-    +getBoxShadow($shadow)
-
+    
 =getButton($color)
     background-color: $color
     border: none
@@ -18,7 +18,14 @@
     text-align: center
     text-decoration: none
     display: inline-block
-    font-size: 12px
+    font-size: 15px
     margin-left: 10px
     border-radius: 10px
     cursor: pointer
+    width: 90%
+
+=getDescription($textAlign, $fontSize , $fontWeight)
+    text-align: $textAlign
+    font-size: $fontSize
+    font-weight: $fontWeight
+    font-family: $font_family

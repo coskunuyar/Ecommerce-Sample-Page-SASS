@@ -2,35 +2,48 @@
 @import './_variables'
 @import './_mixins'
 
+body
+    background: url($background_image)
+    height: 100%
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
 .container
     display: flex
     flex-flow: row wrap
     justify-content: space-between
-    +getBox(-3px 2px 17px -2px rgba(0,0,0,0.4) , 20px ,5px , 25px , $container_box_color)
+    +getBox( $container_box_shadow, 10px , 5px, 25px , $container_box_color)
 
 .item-box
     width: 175px
     height: 150px
     display: table
-    +getBox(-3px 2px 17px -2px rgba(0,0,0,0.4) , 20px ,5px , 25px , $item_box_color)
-
-.company-title
-    text-align: center
-    font-size: 35px
-    font-weight: bold
+    +getBox($item_box_shadow , 10px , 15px, 25px , $item_box_color)
+    cursor: pointer
+    &:hover
+        background-color: rgba(157, 28, 54 , 0.5)
+        color: white
+        transition: all .4s ease
+        -webkit-transition: all .4s ease
+    
+.item-box-image
+    width: 200px
+    height: 200px
+    border-radius: 10px
 
 .item-box-title
-    text-align: center
-    font-size: 25px
-    font-weight: bold
+    +getDescription(center,20px,bold)
 
 .item-box-description
-    text-align: justify
+    +getDescription(justify,15px,normal)
     text-indent: 20px
-    font-size: 14px
+
+.title-definition-box
+    +getBox($item_box_shadow , 0px , 5px, 0px , $title_box_color)
+
+.title-definition-text
+    +getDescription(center,50px,bold)
 
 .item-box-button-add
-    +getButton(#4CAF50)
-
-.item-box-button-remove
-    +getButton(#ff4242)
+    +getButton(#0072ff)
