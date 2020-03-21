@@ -1,0 +1,11 @@
+=getBoxShadow($shadow)
+    -webkit-box-shadow: $shadow
+    -moz-box-shadow: $shadow
+    box-shadow: $shadow
+
+=getBox($shadow , $padding , $borderRadius , $margin , $backgroundColor)
+    padding: $padding
+    border-radius: $borderRadius
+    margin: $margin
+    background-color: $backgroundColor
+    +getBoxShadow($shadow)

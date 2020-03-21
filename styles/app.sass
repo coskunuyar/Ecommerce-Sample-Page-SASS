@@ -4,14 +4,12 @@
 
 .container
     display: flex
-    justify-content: space-between
-    align-content: space-between
     flex-direction: row
     flex-wrap: wrap
-    padding-left: 150px
-    padding-right: 150px
-    padding-top: 75px
+    justify-content: space-between
+    +getBox(-3px 2px 17px -2px rgba(0,0,0,0.4) , 20px ,5px , 25px , $container_box_color)
 
 .item-box
-    width: 150px
-    background-color: $item_box_color
+    width: 100px
+    height: 150px
+    +getBox(-3px 2px 17px -2px rgba(0,0,0,0.4) , 20px ,5px , 25px , $item_box_color)
