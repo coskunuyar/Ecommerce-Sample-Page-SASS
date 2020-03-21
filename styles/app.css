@@ -4,29 +4,74 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px;
   border-radius: 5px;
   margin: 25px;
-  background-color: pink;
+  background-color: #f1f1f1;
   -webkit-box-shadow: -3px 2px 17px -2px rgba(0, 0, 0, 0.4);
   box-shadow: -3px 2px 17px -2px rgba(0, 0, 0, 0.4);
 }
 
 .item-box {
-  width: 100px;
+  width: 175px;
   height: 150px;
+  display: table;
   padding: 20px;
   border-radius: 5px;
   margin: 25px;
   background-color: #f5f2e9;
   -webkit-box-shadow: -3px 2px 17px -2px rgba(0, 0, 0, 0.4);
   box-shadow: -3px 2px 17px -2px rgba(0, 0, 0, 0.4);
+}
+
+.company-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.item-box-title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.item-box-description {
+  text-align: justify;
+  text-indent: 20px;
+  font-size: 14px;
+}
+
+.item-box-button-add {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 7px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.item-box-button-remove {
+  background-color: #ff4242;
+  border: none;
+  color: white;
+  padding: 7px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=app.css.map */
