@@ -1,5 +1,3 @@
 # SASS-Ecommerce-Sample-Page
-This applicaiton is developed by using SASS ,hmtl.
-
-##### clone files into local machine
-##### open index html
+##### Final State
+<img src="./assets/current-screen.png"  alt="final-state"/>
